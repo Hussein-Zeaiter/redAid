@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Aid</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" type="image/png" href="./Red Aid.png">
+    <link rel="stylesheet" href="styles/applicationList.css">
+    <script src="./js/applicationJS.js" defer></script>
+</head>
+<body>
+
+    <header id="theHeader">
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <a href="#">Browse</a>
+                <ul class="dropdown">
+                  <li><a href="donorList.html">Donor List</a></li>
+                  <li><a href="applicationList.html">Application List</a></li>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+    
+        <div id="titleBox">
+            <img src="Red Aid.png" alt="blood aid logo">
+        </div>
+    
+        <nav>
+          <ul>
+              <li>
+                <a href="#">Participate</a>
+                <ul class="dropdown">
+                  <li><a href="donate.html">Donate</a></li>
+                  <li><a href="receive.html">Receive</a></li>
+                </ul>
+              </li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+        <h1>Application List</h1>
+        <div class="filter-container">
+            <label>
+                Blood Type:
+                <select id="bloodTypeFilter">
+                    <option value="">All</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </label>
+            <label>
+                Name:
+                <input type="text" id="nameFilter" placeholder="Enter name">
+            </label>
+            <label>
+                Hospital:
+                <input type="text" id="hospitalFilter" placeholder="Enter hospital">
+            </label>
+            <label>
+                Age:
+                <input type="number" id="ageFilter" placeholder="Enter age">
+            </label>
+        </div>
+
+        <div class="cards-container" id="applicationList">
+            <!-- Cards will be dynamically inserted here -->
+        </div>
+
+        <!-- Modal for Eligibility Form -->
+<!-- Modal for Eligibility Form -->
+<div id="eligibilityModal" class="modal">
+    <div class="modal-content">
+        <h2>Eligibility Check</h2>
+        <form id="eligibilityForm">
+            <label id="bloodtypeQuestion">Is your blood type compatible with the receiver?</label>
+            <div>
+                <input type="radio" name="compatibleBlood" value="yes" required> Yes
+                <input type="radio" name="compatibleBlood" value="no"> No
+            </div>
+
+            <label>Have you donated blood in the last two weeks?</label>
+            <div>
+                <input type="radio" name="recentDonation" value="yes" required> Yes
+                <input type="radio" name="recentDonation" value="no"> No
+            </div>
+
+            <label>Do you have any chronic illnesses?</label>
+            <div>
+                <input type="radio" name="chronicIllness" value="yes" required> Yes
+                <input type="radio" name="chronicIllness" value="no"> No
+            </div>
+
+            <label>Do you have any blood diseases?</label>
+            <div>
+                <input type="radio" name="bloodDisease" value="yes" required> Yes
+                <input type="radio" name="bloodDisease" value="no"> No
+            </div>
+
+            <label>Do you take any chronic medicine?</label>
+            <div>
+                <input type="radio" name="chronicMedicine" value="yes" required> Yes
+                <input type="radio" name="chronicMedicine" value="no"> No
+            </div>
+
+            <label>Do you have allergies?</label>
+            <div>
+                <input type="radio" name="allergy" value="yes" required> Yes
+                <input type="radio" name="allergy" value="no"> No
+            </div>
+
+            <label>Are you feeling healthy and well today?</label>
+            <div>
+                <input type="radio" name="healthyToday" value="yes" required> Yes
+                <input type="radio" name="healthyToday" value="no"> No
+            </div>
+
+            <label>Are you currently taking antibiotics or any other medication for an infection?</label>
+            <div>
+                <input type="radio" name="antibiotics" value="yes" required> Yes
+                <input type="radio" name="antibiotics" value="no"> No
+            </div>
+
+            <label>In the past 48 hours, have you donated platelets, plasma, or leukocytes?</label>
+            <div>
+                <input type="radio" name="recentPlasmaDonation" value="yes" required> Yes
+                <input type="radio" name="recentPlasmaDonation" value="no"> No
+            </div>
+
+            <label>Have you had any vaccinations or other shots?</label>
+            <div>
+                <input type="radio" name="vaccination" value="yes" required> Yes
+                <input type="radio" name="vaccination" value="no"> No
+            </div>
+
+            <label>Have you donated whole blood?</label>
+            <div>
+                <input type="radio" name="wholeBloodDonation" value="yes" required> Yes
+                <input type="radio" name="wholeBloodDonation" value="no"> No
+            </div>
+
+            <label>Have you been pregnant or are you pregnant now?</label>
+            <div>
+                <input type="radio" name="pregnant" value="yes" required> Yes
+                <input type="radio" name="pregnant" value="no"> No
+            </div>
+
+            <label>Have you had surgery, an endoscopy, or other invasive procedure?</label>
+            <div>
+                <input type="radio" name="surgery" value="yes" required> Yes
+                <input type="radio" name="surgery" value="no"> No
+            </div>
+
+            <label>Have you had a tattoo?</label>
+            <div>
+                <input type="radio" name="tattoo" value="yes" required> Yes
+                <input type="radio" name="tattoo" value="no"> No
+            </div>
+
+            <label>Have you tested positive for the HIV/AIDS virus?</label>
+            <div>
+                <input type="radio" name="hivTest" value="yes" required> Yes
+                <input type="radio" name="hivTest" value="no"> No
+            </div>
+
+            <button type="submit">Submit</button>
+            <button type="button" id="closeModal">Close</button>
+        </form>
+        <div id="eligibilityResult" class="hidden">
+            <!-- Result will be displayed here -->
+        </div>
+    </div>
+</div>
+
+
+
+    </main>
+
+    <footer id="siteFooter">
+
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>About Our Mission</h3>
+                <p>
+                    We are dedicated to connecting blood donors with those in need, fostering a culture of giving, and saving lives every day. Together, we can make a difference!
+                </p>
+            </div>
+    
+            <div class="footer-middle">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Donor List</a></li>
+                    <li><a href="#">Application List</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Receive</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-right">
+                <h3>Contact Info</h3>
+                <p>Email: redaid@gmail.com</p>
+                <p>Phone: +961 123 456</p>
+                <p>Address: Beirut, Lebanon</p>
+                <div class="social-links">
+                    <a href="#"><img src="./assets/facebookLogo.png" alt="Facebook"></a>
+                    <a href="#"><img src="./assets/xLogo.png" alt="Twitter"></a>
+                    <a href="#"><img src="./assets/instagramLogo.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Red Aid. All rights reserved.</p>
+        </div>
+    
+    </footer>
+    
+</body>
+</html>

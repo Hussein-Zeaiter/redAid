@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif; /* Sets the font style for the entire page */
+    margin: 0; /* Removes default margin from the body */
+    padding: 0; /* Removes default padding from the body */
+}
+
+#theHeader {
+    display: flex; /* Arranges children in a horizontal row */
+    justify-content: space-between; /* Spaces out items evenly with space between */
+    align-items: center; /* Aligns items vertically at the center */
+    padding: 10px 30px; /* Adds spacing inside the header */
+    border-bottom: 2px solid red; /* Adds a red border below the header */
+}
+
+header img {
+    width: 25%; /* Sets the width of the image to 25% of its parent */
+}
+
+#titleBox {
+    display: flex; /* Arranges children in a horizontal row */
+    justify-content: left; /* Aligns children to the left */
+    align-items: center; /* Aligns children vertically at the center */
+}
+
+nav {
+    background-color: #fff; /* Sets the navigation background color to white */
+    color: #000; /* Sets the text color to black */
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullet points from the list */
+    margin: 0; /* Removes default margin around the list */
+    padding: 0; /* Removes default padding around the list */
+    display: flex; /* Arranges list items in a horizontal row */
+}
+
+nav ul li {
+    position: relative; /* Positions the list item relative to enable dropdown placement */
+}
+
+nav ul li a {
+    display: block; /* Makes the link behave like a block element */
+    color: #000; /* Sets the link text color to black */
+    text-decoration: none; /* Removes the underline from links */
+    padding: 15px 20px; /* Adds spacing inside the link */
+}
+
+nav ul li a:hover {
+    color: white; /* Changes the link text color to white on hover */
+    background-color: red; /* Changes the background color to red on hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    display: none; /* Hides the dropdown by default */
+    position: absolute; /* Positions the dropdown relative to the parent */
+    top: 100%; /* Aligns the dropdown just below the parent */
+    left: 0; /* Aligns the dropdown to the left edge of the parent */
+    background-color: red; /* Sets the dropdown background color to red */
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow effect to the dropdown */
+    z-index: 1000; /* Ensures the dropdown appears above other elements */
+}
+
+.dropdown li {
+    width: 200px; /* Sets a fixed width for dropdown items */
+}
+
+.dropdown li a {
+    padding: 10px 15px; /* Adds spacing inside dropdown links */
+}
+
+.dropdown li a:hover {
+    color: #fff; /* Changes the dropdown link text color to white on hover */
+    background-color: red; /* Keeps the background red on hover */
+}
+
+/* Show Dropdown on Hover */
+nav ul li:hover .dropdown {
+    display: block; /* Displays the dropdown when the parent is hovered */
+}
+
+/*------------------------------------------------------------ */
+
+#heroSection {
+    display: flex; /* Arranges children in a horizontal row */
+    align-items: center; /* Aligns children vertically at the center */
+    justify-content: space-between; /* Spaces out items evenly with space between */
+    padding: 3% 10%; /* Adds spacing inside the hero section */
+}
+
+#heroSection h2 {
+    width: 70%; /* Sets the width of the heading to 70% of its parent */
+    font-size: 300%; /* Sets the font size to 300% of the default size */
+}
+
+#heroSection p {
+    font-size: 120%; /* Sets the font size to 120% of the default size */
+    width: 70%; /* Sets the width of the paragraph to 70% of its parent */
+}

@@ -1,0 +1,76 @@
+main {
+    background-color: #ffe6e6;
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+max-width: 600px;
+padding: 20px;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 8px;
+box-shadow: 0 0 5px rgb(230, 79, 79);
+}
+
+.container h1 {
+color: red;
+text-align: center;
+margin-bottom: 10px;
+}
+
+.container p {
+color: #333;
+text-align: center;
+font-size: 16px;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+.container #imp {
+    color: red;
+}
+
+.container label {
+font-weight: bold;
+margin-bottom: 5px;
+display: block;
+color: red;
+}
+
+.container input,
+.container select,
+.container textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+box-sizing: border-box;
+}
+
+.container input:focus,
+.container select:focus,
+.container textarea:focus {
+border-color: rgb(230, 79, 79); /* Brighter blue for focus */
+box-shadow: 0 0 5px rgb(230, 79, 79);
+outline: none;
+}
+
+.container button {
+width: 100%;
+padding: 10px;
+font-size: 18px;
+background-color: red;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.container button:hover {
+background-color: #8b0000;
+}

@@ -1,0 +1,10 @@
+Pages : 
+
+-login (donor)
+-map
+-list of donors (filtered)
+-list of open applications
+-landing
+-about us
+-contact page
+

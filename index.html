@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Aid</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" type="image/png" href="./Red Aid.png">
+</head>
+<body>
+   
+    <header id="theHeader">
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li>
+                <a href="#">Browse</a>
+                <ul class="dropdown">
+                  <li><a href="donorList.html">Donor List</a></li>
+                  <li><a href="applicationList.html">Application List</a></li>
+                </ul>
+              </li>
+          </ul>
+        </nav>
+    
+        <div id="titleBox">
+            <img src="Red Aid.png" alt="blood aid logo">
+        </div>
+    
+        <nav>
+          <ul>
+              <li>
+                <a href="#">Participate</a>
+                <ul class="dropdown">
+                  <li><a href="donate.html">Donate</a></li>
+                  <li><a href="receive.html">Receive</a></li>
+                </ul>
+              </li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+    <main>
+
+        <section id="heroSection">
+
+            <div>
+                <h2>Donate Blood, Save Lives.</h2>
+                <p>A small act of kindness can be the lifeline someone needs today.</p>
+                <button>
+                    <a href="donate.html">Donate Blood</a>
+                </button>
+                <button>
+                    <a href="receive.html">Recieve Blood</a>
+                </button>
+            </div>
+
+            <iframe width="560" height="400" src="https://www.youtube.com/embed/oK6OqphSbjU?si=2muKL_d8oHfhKzXJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+        </section>
+
+        <section id="aboutUs">
+
+            <div class="about-content">
+                <h2>About Us</h2>
+        
+                <p>
+                    A Lebanese startup is transforming blood donation by making it easier and more accessible for everyone. Through a user-friendly app, it connects donors and recipients in real-time, ensuring life-saving blood reaches those in need quickly. By promoting kindness and solidarity, this initiative empowers individuals to strengthen their community and save lives.
+                </p>
+        
+                <button><a href="about.html">Learn More</a></button>
+            </div>
+        
+            <div class="about-image">
+                <img src="assets/aboutVertical.jpg" alt="blood donation">
+            </div>
+        
+        </section>
+
+        <section id="callForAction">
+
+            <h2>Donate Now !</h2>
+
+            <p>donating blood saves lives every minute on the planet, make sure to be one of the heroes</p>
+
+            <button><a href="donate.html">Donate</a></button>
+
+        </section>
+
+        <section id="funFacts">
+
+            <h2>Fun Facts About Blood Donation</h2>
+        
+            <ul>
+                <li>Every two seconds, someone in the world needs blood.</li>
+                <li>One donation can save up to three lives!</li>
+                <li>Over 38,000 blood donations are needed every day in the U.S. alone.</li>
+                <li>Donating blood is safe and takes only about 10 minutes.</li>
+                <li>People can donate blood every 56 days — that's 6 times a year!</li>
+            </ul>
+        
+        </section>
+
+        <section id="mapSection">
+
+            <h2>Discover Lebanon: A Land of Giving</h2>
+        
+            <p>Lebanon is home to countless heroes who contribute to the well-being of others. Let’s grow together and make a difference by supporting blood donation efforts across the country. Find key locations and get involved today!</p>
+        
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=650&amp;height=400&amp;hl=en&amp;q=Lebanon&amp;t=&amp;z=8&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+            </div>
+        
+        </section>
+
+        <section id="contactUs">
+
+            <div class="left">
+                <h2>Contact Us</h2>
+                <p>
+                    Have questions or need assistance? Reach out to us, and we’ll get back to you as soon as possible. We’re here to help and provide you with the information you need.
+                </p>
+                <ul>
+                    <li>Phone Number : +961 000 000</li>
+                    <li>Email : redaid@gmail.com</li>
+                    <li>Address : Lebanon, Beirut, Achrafeyeh, 981 st.</li>
+                </ul>
+            </div>
+        
+            <div class="right">
+                <form action="https://formsubmit.co/mila.malaeb@gmail.com" method="POST" id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comment</label>
+                        <textarea id="comment" name="comment" placeholder="Enter your message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        
+        </section>
+        
+    </main>
+
+    <footer id="siteFooter">
+
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>About Our Mission</h3>
+                <p>
+                    We are dedicated to connecting blood donors with those in need, fostering a culture of giving, and saving lives every day. Together, we can make a difference!
+                </p>
+            </div>
+    
+            <div class="footer-middle">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="donorList.html">Donor List</a></li>
+                    <li><a href="applicationList.html">Application List</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="receive.html">Receive</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-right">
+                <h3>Contact Info</h3>
+                <p>Email: redaid@gmail.com</p>
+                <p>Phone: +961 123 456</p>
+                <p>Address: Beirut, Lebanon</p>
+                <div class="social-links">
+                    <a href="#"><img src="./assets/facebookLogo.png" alt="Facebook"></a>
+                    <a href="#"><img src="./assets/xLogo.png" alt="Twitter"></a>
+                    <a href="#"><img src="./assets/instagramLogo.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Red Aid. All rights reserved.</p>
+        </div>
+    
+    </footer>
+    
+   
+</body>
+</html>

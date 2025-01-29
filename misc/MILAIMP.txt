@@ -1,0 +1,1 @@
+make each user a button to a form use data attributes and a simple javascript code thingy!

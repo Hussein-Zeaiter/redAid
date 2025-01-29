@@ -1,0 +1,11 @@
+name
+id card
+date of birth
+age
+gender
+maritial status
+home telephone number
+cellular number
+email
+home address
+province

@@ -1,0 +1,166 @@
+body {
+    position: relative;
+    font-family: Arial, sans-serif; /* Sets the font style for the entire page */
+    margin: 0; /* Removes default margin from the body */
+    padding: 0; /* Removes default padding from the body */
+}
+
+#theHeader {
+    position: sticky;
+    display: flex; /* Arranges children in a horizontal row */
+    justify-content: space-evenly; /* Spaces out items evenly with space between */
+    align-items: center; /* Aligns items vertically at the center */
+    padding: 10px 30px; /* Adds spacing inside the header */
+    border-bottom: 2px solid red; /* Adds a red border below the header */
+}
+
+header img {
+    width: 30%; /* Sets the width of the image to 25% of its parent */
+}
+
+#titleBox {
+    display: flex; /* Arranges children in a horizontal row */
+    justify-content: center; /* Aligns children to the left */
+    align-items: center; /* Aligns children vertically at the center */
+}
+
+nav {
+    background-color: #fff; /* Sets the navigation background color to white */
+    color: #000; /* Sets the text color to black */
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullet points from the list */
+    margin: 0; /* Removes default margin around the list */
+    padding: 0; /* Removes default padding around the list */
+    display: flex; /* Arranges list items in a horizontal row */
+}
+
+nav ul li {
+    position: relative; /* Positions the list item relative to enable dropdown placement */
+}
+
+nav ul li a {
+    display: block; /* Makes the link behave like a block element */
+    color: #000; /* Sets the link text color to black */
+    text-decoration: none; /* Removes the underline from links */
+    padding: 15px 20px; /* Adds spacing inside the link */
+    transition: all 0.3s;
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    color: white; /* Changes the link text color to white on hover */
+    background-color: red; /* Changes the background color to red on hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    display: none; /* Hides the dropdown by default */
+    position: absolute; /* Positions the dropdown relative to the parent */
+    top: 100%; /* Aligns the dropdown just below the parent */
+    left: 0; /* Aligns the dropdown to the left edge of the parent */
+    background-color: red; /* Sets the dropdown background color to red */
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow effect to the dropdown */
+    z-index: 1000; /* Ensures the dropdown appears above other elements */
+}
+
+.dropdown li {
+    width: 200px; /* Sets a fixed width for dropdown items */
+}
+
+.dropdown li a {
+    padding: 10px 15px; /* Adds spacing inside dropdown links */
+}
+
+.dropdown li a:hover {
+    color: #fff; /* Changes the dropdown link text color to white on hover */
+    background-color: red; /* Keeps the background red on hover */
+}
+
+/* Show Dropdown on Hover */
+nav ul li:hover .dropdown {
+    display: block; /* Displays the dropdown when the parent is hovered */
+}
+
+/*------------------------------------------------------------ */
+
+/* Footer Section */
+#siteFooter {
+    background-color: #fff; /* Dark blue background */
+    color: black;
+    border-top: 2px solid red;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.footer-content div {
+    flex: 1;
+    min-width: 250px; /* Ensures consistent size for smaller screens */
+}
+
+#siteFooter h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: red; /* Red for titles */
+}
+
+#siteFooter p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-middle ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-middle ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-middle ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.footer-middle ul li a:hover {
+    color: #cc0000; /* Red hover effect */
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

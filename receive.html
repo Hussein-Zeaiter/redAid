@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Aid</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" type="image/png" href="./Red Aid.png">
+    <link rel="stylesheet" href="styles/receive.css">
+</head>
+<body>
+
+  <header id="theHeader">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="#">Browse</a>
+            <ul class="dropdown">
+              <li><a href="donorList.html">Donor List</a></li>
+              <li><a href="applicationList.html">Application List</a></li>
+            </ul>
+          </li>
+      </ul>
+    </nav>
+
+    <div id="titleBox">
+        <img src="Red Aid.png" alt="blood aid logo">
+    </div>
+
+    <nav>
+      <ul>
+          <li>
+            <a href="#">Participate</a>
+            <ul class="dropdown">
+              <li><a href="donate.html">Donate</a></li>
+              <li><a href="receive.html">Receive</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+    <main>
+
+        <div class="form-container">
+            <h1>Blood Request Form</h1>
+            <form id="bloodRequestForm">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter patient's full name" required>
+        
+              <label for="hospitalName">Hospital Name</label>
+              <input type="text" id="hospitalName" name="hospitalName" placeholder="Enter hospital name" required>
+        
+              <label for="hospitalPhone">Hospital Phone Number</label>
+              <input type="tel" id="hospitalPhone" name="hospitalPhone" placeholder="Enter hospital phone number" required>
+
+              <label for="governorates">Governorates</label>
+              <select id="governorates" name="governorates" required>
+                <option value="">Select Governorates</option>
+                <option value="akkar">Akkar</option>
+                <option value="baalbeck-hermel">Baalbeck-Hermel</option>
+                <option value="beirut">Beirut</option>
+                <option value="mountLebanon">Mount Lebanon</option>
+                <option value="northLebanon">North Lebanon</option>
+                <option value="nabatiyeh">Nabatiyeh</option>
+                <option value="southLebanon">South Lebanon</option>
+                <option value="keserwenJbeil">Keserwen-Jbeil</option>
+                <option value="keserwenJbeil">Beqaa</option>
+              </select>
+        
+              <label for="age">Age</label>
+              <input type="number" id="age" name="age" placeholder="Enter patient's age" required>
+        
+              <label for="bloodType">Blood Type</label>
+              <select id="bloodType" name="bloodType" required>
+                <option value="">Select blood type</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+              </select>
+        
+              <label for="emergencyContact">Emergency Contact</label>
+              <input type="tel" id="emergencyContact" name="emergencyContact" placeholder="Enter emergency contact number" required>
+        
+              <label for="reason">Reason for Request</label>
+              <textarea id="reason" name="reason" rows="4" placeholder="Explain why blood is needed" required></textarea>
+        
+              <label for="dateNeeded">Date Needed</label>
+              <input type="date" id="dateNeeded" name="dateNeeded" required>
+        
+              <button type="submit">Submit Request</button>
+            </form>
+            </div>
+
+    </main>
+    
+
+    <footer id="siteFooter">
+
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>About Our Mission</h3>
+                <p>
+                    We are dedicated to connecting blood donors with those in need, fostering a culture of giving, and saving lives every day. Together, we can make a difference!
+                </p>
+            </div>
+    
+            <div class="footer-middle">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Donor List</a></li>
+                    <li><a href="#">Application List</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Receive</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-right">
+                <h3>Contact Info</h3>
+                <p>Email: redaid@gmail.com</p>
+                <p>Phone: +961 123 456</p>
+                <p>Address: Beirut, Lebanon</p>
+                <div class="social-links">
+                    <a href="#"><img src="./assets/facebookLogo.png" alt="Facebook"></a>
+                    <a href="#"><img src="./assets/xLogo.png" alt="Twitter"></a>
+                    <a href="#"><img src="./assets/instagramLogo.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Red Aid. All rights reserved.</p>
+        </div>
+    
+    </footer>
+
+</body>
+</html>

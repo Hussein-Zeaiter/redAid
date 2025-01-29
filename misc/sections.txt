@@ -1,0 +1,6 @@
+hero section
+about us section
+take action section
+fun fact section
+map section
+form section

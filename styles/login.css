@@ -1,0 +1,103 @@
+main {
+    background-color: #ffe6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4%;
+}
+
+
+/* Main container for the login form */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #fff; /* Dark grey for the form background */
+    border: 2px solid red; /* Border with the theme color */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    text-align: center;
+}
+
+/* Heading of the form */
+.login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+}
+
+/* Form group container for label and input fields */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Labels for input fields */
+.form-group label {
+    font-size: 0.9rem;
+    color: grey; /* Hint color */
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input fields */
+.form-group input {
+    width: 95%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid red; /* Border with the theme color */
+    border-radius: 5px;
+    background-color: white; /* Match page background */
+    color: black;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus state for input fields */
+.form-group input:focus {
+    border-color: rgb(230, 79, 79); /* Brighter blue for focus */
+    box-shadow: 0 0 5px rgb(230, 79, 79);
+}
+
+/* Submit button styling */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(230, 79, 79);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+    background-color: red; /* Darker blue for hover */
+    transform: scale(1.02);
+}
+
+/* Register link container */
+.register-link {
+    margin-top: 20px;
+}
+
+.register-link p {
+    font-size: 0.9rem;
+    color: grey; /* Hint color */
+}
+
+.register-link a {
+    color: red; /* Theme color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

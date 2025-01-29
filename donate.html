@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Aid</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" type="image/png" href="./Red Aid.png">
+    <link rel="stylesheet" href="./styles/donate.css">
+</head>
+<body>
+
+  <header id="theHeader">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="#">Browse</a>
+            <ul class="dropdown">
+              <li><a href="donorList.html">Donor List</a></li>
+              <li><a href="applicationList.html">Application List</a></li>
+            </ul>
+          </li>
+      </ul>
+    </nav>
+
+    <div id="titleBox">
+        <img src="Red Aid.png" alt="blood aid logo">
+    </div>
+
+    <nav>
+      <ul>
+          <li>
+            <a href="#">Participate</a>
+            <ul class="dropdown">
+              <li><a href="donate.html">Donate</a></li>
+              <li><a href="receive.html">Receive</a></li>
+            </ul>
+          </li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+    <main>
+
+        <div class="container">
+            <h1>Become a Donor</h1>
+            <p>
+              Thank you for your interest in becoming a donor! <span id="imp">You can visit the application list and check your eligibility directly</span>, 
+              or create an account to become a registered donor. By registering, you will be notified whenever a new application is sent out 
+              in your governorate. Join us in saving lives today!
+            </p>
+            <form id="donorRegistryForm">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        
+              <label for="idCard">ID Card</label>
+              <input type="text" id="idCard" name="idCard" placeholder="Enter your ID card number" required>
+        
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" name="dob" required>
+        
+              <label for="age">Age</label>
+              <input type="number" id="age" name="age" placeholder="Enter your age" required>
+        
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender" required>
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+        
+              <label for="maritalStatus">Marital Status</label>
+              <select id="maritalStatus" name="maritalStatus" required>
+                <option value="">Select marital status</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+              </select>
+        
+              <label for="homePhone">Home Telephone Number</label>
+              <input type="tel" id="homePhone" name="homePhone" placeholder="Enter your home telephone number" required>
+        
+              <label for="cellular">Cellular Number</label>
+              <input type="tel" id="cellular" name="cellular" placeholder="Enter your cellular number" required>
+        
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        
+              <label for="address">Home Address</label>
+              <textarea id="address" name="address" rows="3" placeholder="Enter your home address" required></textarea>
+        
+              <label for="governorates">Governorates</label>
+              <select id="governorates" name="governorates" required>
+                <option value="">Select Governorates</option>
+                <option value="akkar">Akkar</option>
+                <option value="baalbeck-hermel">Baalbeck-Hermel</option>
+                <option value="beirut">Beirut</option>
+                <option value="mountLebanon">Mount Lebanon</option>
+                <option value="northLebanon">North Lebanon</option>
+                <option value="nabatiyeh">Nabatiyeh</option>
+                <option value="southLebanon">South Lebanon</option>
+                <option value="keserwenJbeil">Keserwen-Jbeil</option>
+                <option value="keserwenJbeil">Beqaa</option>
+              </select>
+
+              <button type="submit">Register</button>
+            </form>
+          </div>
+
+    </main>
+
+
+    <footer id="siteFooter">
+
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>About Our Mission</h3>
+                <p>
+                    We are dedicated to connecting blood donors with those in need, fostering a culture of giving, and saving lives every day. Together, we can make a difference!
+                </p>
+            </div>
+    
+            <div class="footer-middle">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Donor List</a></li>
+                    <li><a href="#">Application List</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Receive</a></li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-right">
+                <h3>Contact Info</h3>
+                <p>Email: redaid@gmail.com</p>
+                <p>Phone: +961 123 456</p>
+                <p>Address: Beirut, Lebanon</p>
+                <div class="social-links">
+                    <a href="#"><img src="./assets/facebookLogo.png" alt="Facebook"></a>
+                    <a href="#"><img src="./assets/xLogo.png" alt="Twitter"></a>
+                    <a href="#"><img src="./assets/instagramLogo.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Red Aid. All rights reserved.</p>
+        </div>
+    
+    </footer>
+    
+</body>
+</html>
