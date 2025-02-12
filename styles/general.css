@@ -5,7 +5,7 @@ body {
     padding: 0; /* Removes default padding from the body */
 }
 
-#theHeader {
+#desktopHeader {
     position: sticky;
     display: flex; /* Arranges children in a horizontal row */
     justify-content: space-evenly; /* Spaces out items evenly with space between */
@@ -14,33 +14,33 @@ body {
     border-bottom: 2px solid red; /* Adds a red border below the header */
 }
 
-header img {
+#desktopHeader img {
     width: 30%; /* Sets the width of the image to 25% of its parent */
 }
 
-#titleBox {
+#desktopHeader #titleBox {
     display: flex; /* Arranges children in a horizontal row */
     justify-content: center; /* Aligns children to the left */
     align-items: center; /* Aligns children vertically at the center */
 }
 
-nav {
+#desktopHeader nav {
     background-color: #fff; /* Sets the navigation background color to white */
     color: #000; /* Sets the text color to black */
 }
 
-nav ul {
+#desktopHeader nav ul {
     list-style-type: none; /* Removes bullet points from the list */
     margin: 0; /* Removes default margin around the list */
     padding: 0; /* Removes default padding around the list */
     display: flex; /* Arranges list items in a horizontal row */
 }
 
-nav ul li {
+#desktopHeader nav ul li {
     position: relative; /* Positions the list item relative to enable dropdown placement */
 }
 
-nav ul li a {
+#desktopHeader nav ul li a {
     display: block; /* Makes the link behave like a block element */
     color: #000; /* Sets the link text color to black */
     text-decoration: none; /* Removes the underline from links */
@@ -49,13 +49,13 @@ nav ul li a {
     border-radius: 3px;
 }
 
-nav ul li a:hover {
+#desktopHeader nav ul li a:hover {
     color: white; /* Changes the link text color to white on hover */
     background-color: red; /* Changes the background color to red on hover */
 }
 
 /* Dropdown Menu Styles */
-.dropdown {
+#desktopHeader .dropdown {
     display: none; /* Hides the dropdown by default */
     position: absolute; /* Positions the dropdown relative to the parent */
     top: 100%; /* Aligns the dropdown just below the parent */
@@ -65,23 +65,122 @@ nav ul li a:hover {
     z-index: 1000; /* Ensures the dropdown appears above other elements */
 }
 
-.dropdown li {
+#desktopHeader .dropdown li {
     width: 200px; /* Sets a fixed width for dropdown items */
 }
 
-.dropdown li a {
+#desktopHeader .dropdown li a {
     padding: 10px 15px; /* Adds spacing inside dropdown links */
 }
 
-.dropdown li a:hover {
+#desktopHeader .dropdown li a:hover {
     color: #fff; /* Changes the dropdown link text color to white on hover */
     background-color: red; /* Keeps the background red on hover */
 }
 
 /* Show Dropdown on Hover */
-nav ul li:hover .dropdown {
+#desktopHeader nav ul li:hover .dropdown {
     display: block; /* Displays the dropdown when the parent is hovered */
 }
+
+/*------------------------------------------------------------ */
+
+/*------------MOBILE HEADER STYLE------ */
+
+/* Hide Mobile Header on Desktop */
+#mobileHeader {
+    display: none;
+    position: relative;
+}
+
+/* Mobile Header */
+#titleBoxMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 2px solid red;
+}
+
+#titleBoxMobile img {
+    width: 30%;
+}
+
+#menuToggle {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Mobile Navigation */
+#mobileNav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    min-height: 100vh;
+    background: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    border-right: 2px solid red;
+}
+
+#mobileNav h1 {
+    color: #ffe6e6;
+    text-shadow: -1px 1px 0px red;
+    border-bottom: 2px solid red;
+    padding-bottom: 4px;
+}
+
+#mobileNav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#mobileNav ul li {
+    padding: 15px;
+    text-align: center;
+    width: 75%;
+    background-color: #ffe6e6;
+    border-radius: 10px;
+}
+
+#mobileNav ul li a {
+    color: red;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Show Mobile Header and Hide Desktop Header on Small Screens */
+@media (max-width: 768px) {
+    #desktopHeader {
+        display: none;
+    }
+
+    #mobileHeader {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mobileNav.show {
+        left: 0;
+    }
+}
+
 
 /*------------------------------------------------------------ */
 

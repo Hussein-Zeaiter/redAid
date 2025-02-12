@@ -59,6 +59,23 @@
     border-radius: 8px;
 }
 
+
+@media (max-width: 768px) {
+    #heroSection iframe {
+        display: none;
+    }
+    #heroSection div {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #heroSection button {
+        margin: 5px;
+    }
+}
+
+
+
 /* ------------------------------------------------------- */
 
 /* General Styling */
@@ -126,7 +143,27 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
 
+    #aboutUs {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .about-image {
+        display: none;
+    }
+
+    .about-content {
+        max-width: 100%;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .about-content p {
+        text-align: justify;
+    }
+}
 
 /* ------------------------------------------------------- */
 
@@ -144,7 +181,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1%;
+    padding: 4%;
     box-sizing: border-box;
 }
 
@@ -156,6 +193,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 1px #fff;
+    margin-top: 0;
 }
 
 /* Paragraph Styling */
@@ -188,6 +226,13 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    #callForAction h2 {
+        font-size: 2.5em;
+    }
 }
 
 /* ------------------------------------------------------- */
@@ -229,6 +274,13 @@
     transform: translateY(-3px); /* Hover lift effect */
 }
 
+@media (max-width: 768px) {
+
+    #funFacts {
+        padding: 1rem 2rem;
+    }
+    
+}
 
 /* ------------------------------------------------------- */
 
@@ -280,6 +332,17 @@
     border-radius: 8px; /* Rounded corners for iframe */
 }
 
+@media (max-width: 768px) {
+
+    #mapSection {
+        margin: 1rem 0;
+        padding: 2rem 2rem;
+    }
+
+    #mapSection h2 {
+        margin: 0;
+    }
+}
 
 /* ------------------------------------------------------- */
 
@@ -378,6 +441,20 @@
     background-color: #990000; /* Darker red on hover */
 }
 
+@media (max-width: 768px) {
+
+    #contactUs {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+    
+    #contactForm .form-group {
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 /* ------------------------------------------------------- */
 

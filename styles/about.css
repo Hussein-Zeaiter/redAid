@@ -12,6 +12,10 @@ h1 {
     color: red;
 }
 
+hr {
+    width: 90%;
+}
+
 #mainPara {
     width: 70%;
     letter-spacing: 1px;
@@ -39,4 +43,57 @@ h1 {
 
 .aboutSection img {
     width: 30%;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        color: red;
+        text-align: center;
+        margin: 30px 0 0 0 ;
+    }
+    
+    #mainPara {
+        width: 90%;
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 120%;
+        font-size: 120%;
+        margin: 0;
+    }
+
+    #horiImg {
+        width: 95%;
+        border: 2px solid red;
+        box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #otherTitle{
+        font-size: 150%;
+        margin: 0;
+    }
+
+    hr {
+        width: 70%;
+    }
+
+    .aboutSection {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+    }
+    
+    .aboutSection p {
+        font-size: 120%;
+        width: 100%;
+        text-align: justify;
+        line-height: 120%;
+        letter-spacing: 1px;
+    }
+    
+    .aboutSection img {
+        display: none;
+    }
+    
 }

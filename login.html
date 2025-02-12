@@ -7,43 +7,66 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="icon" type="image/png" href="./Red Aid.png">
     <link rel="stylesheet" href="styles/login.css">
+    <script src="./js/header.js" defer></script>
 </head>
 <body>
 
-    <header id="theHeader">
-
+    <header id="desktopHeader">
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li>
-                <a href="#">Browse</a>
-                <ul class="dropdown">
-                  <li><a href="donorList.html">Donor List</a></li>
-                  <li><a href="applicationList.html">Application List</a></li>
-                </ul>
-              </li>
-          </ul>
-        </nav>
-    
-        <div id="titleBox">
-            <img src="Red Aid.png" alt="blood aid logo">
-        </div>
-    
-        <nav>
-          <ul>
-              <li>
-                <a href="#">Participate</a>
-                <ul class="dropdown">
-                  <li><a href="donate.html">Donate</a></li>
-                  <li><a href="receive.html">Receive</a></li>
-                </ul>
-              </li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="#">Browse</a>
+                    <ul class="dropdown">
+                        <li><a href="donorList.html">Donor List</a></li>
+                        <li><a href="applicationList.html">Application List</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     
+        <div id="titleBox">
+            <img src="Red Aid.png" alt="Blood Aid Logo">
+        </div>
+    
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Participate</a>
+                    <ul class="dropdown">
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="receive.html">Receive</a></li>
+                    </ul>
+                </li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Mobile Header (Hidden on Desktop) -->
+    <header id="mobileHeader">
+        <div id="titleBoxMobile">
+            <img src="Red Aid.png" alt="Blood Aid Logo">
+            <button id="menuToggle">&#9776;</button> <!-- Hamburger Icon -->
+        </div>
+    
+        <nav id="mobileNav">
+    
+            <h1>Navigation</h1>
+    
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="donorList.html">Donor List</a></li>
+                <li><a href="applicationList.html">App List</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="receive.html">Receive</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
 

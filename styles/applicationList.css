@@ -117,6 +117,17 @@ h1 {
     .filter-container select {
         width: 100%;
     }
+
+    .cards-container {
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    /* Individual card styles */
+    .card {
+        width: 90%;
+    }
+
 }
 
 
@@ -163,4 +174,12 @@ h1 {
     color: #fff;
     cursor: pointer;
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    
+    .modal-content {
+        width: 75%;
+    }
+
 }
