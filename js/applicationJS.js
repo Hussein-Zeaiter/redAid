@@ -56,13 +56,16 @@ renderApplications(applications);
 
 // Event listeners for filters
 document.getElementById("bloodTypeFilter").addEventListener("change", filterApplications);
+document.getElementById("governorateFilter").addEventListener("change", filterApplications);
 document.getElementById("nameFilter").addEventListener("input", filterApplications);
 document.getElementById("hospitalFilter").addEventListener("input", filterApplications);
 document.getElementById("ageFilter").addEventListener("input", filterApplications);
 
+
 // Filter function
 function filterApplications() {
     const bloodType = document.getElementById("bloodTypeFilter").value.toLowerCase();
+    const governorate = document.getElementById("governorateFilter").value.toLowerCase();
     const name = document.getElementById("nameFilter").value.toLowerCase();
     const hospital = document.getElementById("hospitalFilter").value.toLowerCase();
     const age = document.getElementById("ageFilter").value;
@@ -70,6 +73,7 @@ function filterApplications() {
     const filteredApplications = applications.filter(app => {
         return (
             (bloodType === "" || app.bloodType.toLowerCase() === bloodType) &&
+            (governorate === "" || app.governorate.toLowerCase() === governorate) &&
             (name === "" || app.name.toLowerCase().includes(name)) &&
             (hospital === "" || app.hospital.toLowerCase().includes(hospital)) &&
             (age === "" || app.age === parseInt(age))

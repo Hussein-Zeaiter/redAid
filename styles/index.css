@@ -17,7 +17,7 @@
 #heroSection h2 {
     font-size: 2.8rem;
     color: red; /* Bold red for attention-grabbing header */
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 #heroSection p {
@@ -25,6 +25,7 @@
     line-height: 1.6;
     margin-bottom: 1.5rem;
     color: #555;
+    margin-top: 0;
 }
 
 /* Button Styling */
@@ -190,7 +191,6 @@
     color: red;
     font-size: 3rem;
     margin-bottom: 1rem;
-    text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 2px 1px #fff;
     margin-top: 0;
@@ -298,7 +298,6 @@
     font-size: 2.5rem;
     color: red; /* Dark blue for title */
     margin-bottom: 1rem;
-    text-transform: uppercase;
 }
 
 #mapSection p {
