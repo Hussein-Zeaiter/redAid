@@ -53,15 +53,13 @@
     color: white;
 }
 
-/* Image Styling */
-#heroSection img {
-    max-width: 45%;
-    height: auto;
-    border-radius: 8px;
+#heroSection iframe {
+    width: 560px;
+    height: 400px;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     #heroSection iframe {
         display: none;
     }
@@ -74,7 +72,6 @@
         margin: 5px;
     }
 }
-
 
 
 /* ------------------------------------------------------- */
